@@ -91,7 +91,7 @@ function App() {
             </h2>{" "}
           </div>
           <div className="text-black flex justify-center">
-            <h2 className="p-3 font-bold ">
+            <h2 className="p-3 font-bold animate-pulse">
               You can get a chance to win 1 BTC 🚀
             </h2>
           </div>
@@ -110,11 +110,11 @@ function App() {
 
             <center className="pt-4">
               <button
-                className="items-center m-5  bg-white rounded-full font-medium  py-2 px-4 hover:bg-red-600 hover:text-white shadow-lg"
+                className="items-center m-5 border-2 border-black font-medium  py-2 px-4 hover:bg-red-600 hover:text-white shadow-lg"
                 type="submit"
                 onClick={RegisterHandler}
               >
-                Submit
+                Submit 🡥
               </button>
             </center>
           </div>
