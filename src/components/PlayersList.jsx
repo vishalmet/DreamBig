@@ -166,7 +166,7 @@ const PlayersList = ({ matchId }) => {
     );
 
     return (
-      <div className="p-5">
+      <div className="p-5 text-black">
         <h2>Selected Players from team :</h2>
         {console.log(players)}
         {players.map((player) => (
