@@ -95,10 +95,10 @@ const PlayersList = ({ matchId }) => {
           >
             <div>
               <h1 className="text-[#feb561]">{player.fullName}</h1>
-              <h4 className="text-[#c4c4c4]">{player.role}</h4>
+              <h4 className="text-[#000000]">{player.role}</h4>
             </div>
             <div>
-              <p className="text-[#c4c4c4]">
+              <p className="text-[#000000]">
                 (
                 {player.role === "Batsman" || player.role === "WK-Batsman"
                   ? "10"

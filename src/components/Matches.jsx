@@ -46,17 +46,17 @@ const Matches = () => {
   }, []);
 
   return (
-    <div className="container mt-[50px] App1">
+    <div className="container pt-[4%] gradient-container font-mono">
       <div className="flex flex-col gap-6  ">
         {matches.map((match, index) => (
           <div
             key={match.matchInfo.matchId}
-            className="flex flex-row gap-3 justify-around border border-[#b48325] mx-[120px] rounded-3xl p-6 bg-[#06002E]"
+            className="flex flex-row gap-3 justify-around border border-black mx-[120px] rounded-3xl p-6 bg-slate-100"
           >
             <div className="flex justify-center items-center">
-              <h1 className="text-white">{match.matchInfo.team1.teamName}</h1>
+              <h1 className="text-black">{match.matchInfo.team1.teamName}</h1>
             </div>
-            <div className="text-white">
+            <div className="text-black">
               <h1 className="font-bold text-[20px]">
                 Indian Premier League T20
               </h1>
@@ -70,7 +70,7 @@ const Matches = () => {
                 {" "}
                 <Link to={`/createTeam/${match.matchInfo.matchId}`}>
                   {" "}
-                  <button className="py-1.5 border border-[#fff] text-[#b48325] rounded-3xl px-4 hover:bg-[#b48325] hover:text-[#fff] ">
+                  <button className="py-1.5 border border-black text-black px-4 hover:bg-black hover:text-white hover:border-white ">
                     Create Team
                   </button>
                 </Link>
@@ -83,7 +83,7 @@ const Matches = () => {
                 alt="team logo"
               /> */}
 
-              <h1 className="text-white">{match.matchInfo.team2.teamName}</h1>
+              <h1 className="text-black">{match.matchInfo.team2.teamName}</h1>
             </div>
           </div>
         ))}
