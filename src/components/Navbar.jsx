@@ -7,7 +7,7 @@ const Navbar = ({ handleConnect }) => {
 
   return (
     <>
-      <div className="text-white m-0 p-0 app12">
+      <div className="text-white m-0 p-0 bg-transparent border">
         <div className="flex justify-between pt-2 pl-5 ml-[100px] mr-[75px] pr-[30px]">
           <div>
             <img

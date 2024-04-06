@@ -9,6 +9,7 @@ import ContestCreation from "./components/ContestCreation";
 import CurrentContest from "./components/CurrentContest";
 import LeaderBoard from "./components/LeaderBoard";
 import Metastart from "./components/Metastart";
+import Landing from "./components/Landing";
 
 import "@rainbow-me/rainbowkit/styles.css";
 import { getDefaultWallets, RainbowKitProvider } from "@rainbow-me/rainbowkit";
@@ -48,6 +49,7 @@ root.render(
         <Router>
           <Link to="/" element={<App />} />
           <Routes>
+            <Route path="/landing" element={<Landing />} />
             <Route path="/" element={<App />} />
             <Route path="/contest" element={<Contest />} />
             <Route path="/createTeam/:match_id" element={<CreateTeam />} />
