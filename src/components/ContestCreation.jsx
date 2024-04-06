@@ -27,7 +27,7 @@ const ContestCreation = () => {
   };
 
   return (
-    <div className="App1 h-full">
+    <div className="gradient-container h-screen">
       <Navbar />
       <div className="flex flex-col">
         <div className="flex flex-row gap-3 justify-around mt-[10px] mx-[30px] rounded-3xl pb-6 bg-[#06002E]">
@@ -39,7 +39,7 @@ const ContestCreation = () => {
             />
           </div>
           <div className="text-white">
-            <h1 className="font-bold text-[20px]">Indian Premier League T20</h1>
+            <h1 className="font-bold pt-3 text-[20px]">Indian Premier League T20</h1>
             <center className="m-3 gap-4 p-2 ">
               <h2 className="font-semibold mx-auto pb-3">Vs</h2>
               <h4 className="font-light">Starts at Sun 03:30 PM</h4>
@@ -87,47 +87,45 @@ const ContestCreation = () => {
             Spots: 3{" "}
           </h1>
         </center> */}
-        <center className="mb-[50px]">
+        <center className="">
           <input
             type="text"
-            className="w-1/5 h-[38px] rounded-3xl placeholder:text-center text-center"
+            className="w-1/5 h-[38px] text-white border-black bg-black placeholder:text-center text-center"
             placeholder="Enter your contest name: "
             value={contestName}
             onChange={(e) => setcontestName(e.target.value)}
           />
         </center>
 
-        <div className="flex justify-center">
-          {" "}
-          <div className="w-3/4 h-2 bg-[#B48325]"></div>
-        </div>
+      
 
-        <center className="my-5">
+        <center className=" pt-3">
           {/* <Link to="/currentContest"> */}
           <button
-            className="text-[#B48325] bg-transparent border border-white py-2 px-5 rounded-3xl"
+            className="items-center m-5 border-2 border-black font-medium  py-2 px-4 hover:bg-red-600 hover:text-white shadow-lg"
             onClick={handleContestCreate}
           >
             Create Contest
           </button>
           {/* </Link> */}
         </center>
-        <center>
-          <h1 className="text-[30px] font-serif text-white">Or</h1>
-        </center>
+        <div className="flex justify-center">
+          <div className="w-3/4 h-2 bg-[#B48325]"></div>
+        </div>
 
-        <center>
+
+        <center className=" pt-6">
           <input
             type="text"
-            className="w-1/5 h-[38px] rounded-3xl placeholder:text-center"
+            className="w-1/5 h-[38px] text-white border-black bg-black placeholder:text-center text-center"
             placeholder="Enter the contest code: "
             value={joinContestName}
             onChange={(e) => setJoincontestName(e.target.value)}
           />
         </center>
-        <center className="my-5">
+        <center className="pt-3">
           <button
-            className="text-[#B48325] bg-transparent border border-white py-2 px-5 rounded-3xl"
+            className="items-center m-5 border-2 border-black font-medium  py-2 px-4 hover:bg-red-600 hover:text-white shadow-lg"
             onClick={joinHandler}
           >
             Join Contest

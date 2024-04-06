@@ -20,14 +20,14 @@ const CurrentContest = () => {
   const perf = [20, 30, 40, 50, 66, 55, 44, 33, 22, 77, 88];
 
   return (
-    <div className="App h-full">
+    <div className="gradient-container h-screen font-mono">
       <Navbar />
       <div className="flex flex-col">
         <div className="flex flex-row gap-3 justify-around mt-[10px] mx-[30px] rounded-3xl pb-6 bg-[#06002E]">
           <div className="flex justify-center items-center">
             <h1 className="text-white">RR</h1>
           </div>
-          <div className="text-white">
+          <div className="text-white pt-3">
             <h1 className="font-bold text-[20px]">Indian Premier League T20</h1>
             <center className="m-3 gap-4 p-2 ">
               <h2 className="font-semibold mx-auto pb-3">Vs</h2>
@@ -69,10 +69,6 @@ const CurrentContest = () => {
       <center className="pb-4">
         <LeaderBoard contestName="lives" performance={perf} />
       </center>
-      <div className=" fixed bottom-0 left-[42%]    ">
-        {" "}
-        <Footer />
-      </div>
     </div>
   );
 };

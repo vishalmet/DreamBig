@@ -18,7 +18,7 @@ const LeaderBoard = ({ contestName, performance }) => {
     <div className=" h-full">
       <div className="text-white">
         <button
-          className="py-2 px-6 rounded border border-blue-400 bg-blue-900"
+          className="items-center m-5 border-2 border-black font-medium text-black  py-2 px-4 hover:bg-red-600 hover:text-white shadow-lg"
           onClick={handleEnd}
         >
           {!finished ? "Result" : "Match isn't over yet! "}

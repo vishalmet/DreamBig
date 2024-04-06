@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { AiOutlineBell } from "react-icons/ai";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
+import Logo from '../assets/logo.png'
 import "./nav.css";
 const Navbar = ({ handleConnect }) => {
   const [account, setAccount] = useState();
@@ -11,7 +12,7 @@ const Navbar = ({ handleConnect }) => {
         <div className="flex justify-between pt-2 pl-5 ml-[100px] mr-[75px] pr-[30px]">
           <div><a href="/landing">
             <img
-              src="https://github.com/Sunil0881/logo/blob/main/logo-removebg-preview.png?raw=true"
+              src={Logo}
               className="bg-contain w-12 h-12 rounded-full"
               alt="icon"
             /></a>
