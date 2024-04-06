@@ -9,12 +9,12 @@ const Navbar = ({ handleConnect }) => {
     <>
       <div className="text-white m-0 p-0 bg-transparent border">
         <div className="flex justify-between pt-2 pl-5 ml-[100px] mr-[75px] pr-[30px]">
-          <div>
+          <div><a href="/landing">
             <img
               src="https://github.com/Sunil0881/logo/blob/main/logo-removebg-preview.png?raw=true"
               className="bg-contain w-12 h-12 rounded-full"
               alt="icon"
-            />
+            /></a>
           </div>
           <div className="flex gap-3">
             {/* <div className="flex items-center ">

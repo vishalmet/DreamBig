@@ -246,7 +246,7 @@ const PlayersList = ({ matchId }) => {
       <div className="flex justify-center items-center pb-5">
         {/* <Link to="/createContest"> */}
         <button
-          className="border-white py-2 px-5 border text-[#B48325] rounded-3xl hover:bg-red-600 hover:text-white"
+          className="items-center m-5 border-2 border-black font-medium  py-2 px-4 hover:bg-red-600 hover:text-white shadow-lg"
           onClick={handleSelectTeam}
         >
           Save Team
